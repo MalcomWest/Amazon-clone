@@ -1,0 +1,140 @@
+footer{
+    background-color: #131A22;
+}
+
+.redirect{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    align-items: center;
+    background-color: #37475A;
+    color: white;
+    font-size: 0.8rem;
+    
+}
+
+.redirect > a{
+    text-decoration:none;
+    color: white;
+}
+
+.redirect:hover{
+    background-color: #485769;
+}
+
+.information-parent{
+    background-color: #232F3E;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.information{
+    display: flex;
+    justify-content: center;
+    background-color: #232F3E;
+    padding: 40px;
+}
+
+
+.information > ul{
+    
+    flex-wrap: wrap;
+    flex-basis: 50%;
+    justify-content: space-around;
+    display: flex;
+    list-style: none;
+    max-width: 1000px;
+}
+
+.information > ul > li{
+    font-size: 1.2rem;
+    color: white;
+    font-weight: 700;
+}
+
+.information > ul > li > ul {
+    list-style: none;
+}
+
+.ml{
+    margin-top: 10px;
+}
+
+.ml > li{
+    padding: 4px;
+}
+
+.ml > li > p {
+    font-size: 0.8rem;
+    color: #DDDDDD;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.ml > li > p:hover{
+    text-decoration: underline;
+}
+
+.wapperpp{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lower-footer{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    max-width: 800px;
+}
+
+.lower-footer-right{
+    color: #ccc;
+    padding: 10px;
+    border: 0.5px solid gray;
+    margin-left: 20px;
+    font-size: 0.8rem;
+}
+
+.second-end{
+    color: #ccc;
+    font-size: 0.7rem;
+    background-color: #131A22;
+    padding-bottom: 20px;
+}
+
+
+.second-end-top{
+    padding-top: 30px;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-bottom: 15px;
+
+}
+
+.second-end-top > p{
+    cursor: pointer;
+}
+
+.second-end-top > p:hover{
+    text-decoration: underline;  
+}
+
+.second-child-bottom{
+    text-align: center;
+}
+
+
+@media screen and (max-width: 934px) {
+    .information > ul{
+    flex-basis: 100%;
+    margin-top: 30px;
+    }
+}

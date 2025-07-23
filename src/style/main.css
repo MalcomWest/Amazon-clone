@@ -1,0 +1,167 @@
+@import url(../style/element/header.css);
+@import url(../style/element/footer.css);
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Inter;
+}
+
+.finally{
+    background-color: #E3E6E6;
+    z-index: -99;
+}
+
+
+main{
+    display: flex;
+    justify-content: center;
+    z-index: 100;
+    position: relative;
+    margin: 20px;
+}
+
+.image-bg-parent{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.image-bg{
+    background-color: #E3E6E6;
+    display: flex;
+    justify-content: center;
+    max-width: 1530px;
+    margin-bottom: -390px;
+}
+
+.image-bg img{
+    width: 100%;
+    mask-image: linear-gradient(black 60%,transparent);
+}
+
+.content-hold{
+    max-width: 1500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.grid-list{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 20px;
+    
+}
+
+.grid-held{
+    padding: 0px 20px 20px 20px;
+}
+
+.grid-list-item{
+    background-color: #fff;
+    padding: 10px;
+}
+
+
+
+.grid-helding{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.grid-list-item-p{
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+
+.thumbnail-photo{
+    object-fit: cover;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 2px;
+    padding-top: 2px;
+}
+
+.thumbnail-photo img{
+    width: 100%;
+}
+
+.another-one{
+    width: 100%;
+    background-color: #E3E6E6;
+    padding-bottom: 30px;
+}
+
+.thumbnail-text{
+    white-space: nowrap;
+    font-size: 0.8rem;
+}
+
+.slider{
+    max-width: 1450px;
+    padding: 25px;
+    background-color: #fff;
+    margin: 0px auto;
+}
+
+
+
+.slider-inside{
+    display: flex;
+    overflow: auto;
+    gap: 5px;
+}
+
+.slider-text {
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+
+
+
+@media screen and (max-width: 1230px) {
+    .grid-list{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 20px;
+
+    padding: 20px;
+    
+    }
+}
+
+
+@media screen and (max-width: 660px) {
+    .grid-list{
+
+    display: grid;
+    grid-template-columns: 1fr;
+
+    gap: 20px;
+
+    padding: 20px;
+    
+    }
+    
+    .image-bg{
+    background-color: #E3E6E6;
+    display: flex;
+    justify-content: center;
+    min-width: 500px;
+    margin-bottom: -100px;
+}
+    .image-bg > img{
+        width: 130%;
+    }
+
+}
